@@ -27,7 +27,8 @@
                     <th>Name:</th>
                     <th>Username:</th>
                     <th>Email:</th>
-                    <th>Actions</th>
+                    <th>Joined:</th>
+                    <th>Actions:</th>
                 </tr>
             </thead>
             <tbody>
@@ -36,7 +37,13 @@
                         <td>{{$user->name}}</td>
                         <td><a href="/users/{{$user->id}}">{{$user->username}}</a></td>
                         <td>{{$user->email}}</td>
-                        <td>Pending</td>
+                        <td>{{$user->created_at}}</td>
+                        <td>
+                          {!!Form::open(['action'=>['UsersController@destroy',$user->id],'method'=>'POST','class'=>'pull-right'])!!}
+                            {{Form::hidden('_method','DELETE')}}
+                            {{Form::submit('Delete',['class'=>'btn btn-danger'])}}
+                          {!!Form::close()!!}
+                        </td>
                     </tr>
                 @endforeach
             </tbody>

@@ -35,7 +35,12 @@
                         <tr>
                             <td>{{$user->created_at}}</td>
                             <td><a href="/posts/{{$user->id}}">{{$user->title}}</a></td>
-                            <td>Pending</td>
+                            <td>
+                              {!!Form::open(['action'=>['PostsController@destroy',$user->id],'method'=>'POST','class'=>'pull-right'])!!}
+                                {{Form::hidden('_method','DELETE')}}
+                                {{Form::submit('Delete',['class'=>'btn btn-danger'])}}
+                              {!!Form::close()!!}
+                            </td>
                         </tr>
                     @endforeach
                 </tbody>

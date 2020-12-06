@@ -125,6 +125,15 @@ class UsersController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $users = User::find($id);
+        if(auth()->user()->usertype == 'admin'){
+            if($users->user_images!=='noImage.jpg'){
+                Storage::delete('public/cover_images/'.$users->user_images);
+            }
+        $users->delete();
+        return redirect('/dashboard')->with('success','User Deleted');
+        }else{
+            return redirect('/home')->with('danger','Unauthorized Page');
+        }
     }
 }
