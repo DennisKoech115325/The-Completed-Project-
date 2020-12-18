@@ -23,7 +23,7 @@
             <div class="from-group row">
                 {{Form::label('about','About Me',['class'=>'col-md-4 col-form-label text-md-right'])}}
                 <div class="col-md-4">
-                    {{Form::textarea('about','Tell us about yourself',['class'=>'form-control','placeholder'=>'Body'])}}
+                    {{Form::textarea('about',$users->about,['class'=>'form-control','placeholder'=>'Body'])}}
                 
                 </div>
             </div>
