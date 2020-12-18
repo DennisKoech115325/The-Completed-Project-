@@ -18,7 +18,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="{{ secure_asset('app.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('Ambition/public/app.css') }}">
 </head>
 <body>
     <div id="app">
