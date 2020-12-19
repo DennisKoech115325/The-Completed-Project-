@@ -6,9 +6,7 @@
         @foreach ($users as $item)
             <div class="card">
                 <div class="row">
-                    <div class="col-md2 col-sm-2">
-                        <img style="width:100%" src="{{asset('/storage/user_images'.$item->user_images)}}">
-                    </div>
+                    
                     <div class="col_sm8 col-sm-8">
                         <h3><a href="/users/{{$item->id}}">{{$item->name}} </a></h3>
                         <small>Written on {{$item->created_at}}</small>   

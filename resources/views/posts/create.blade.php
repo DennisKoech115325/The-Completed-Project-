@@ -14,7 +14,7 @@
                 {{Form::hidden('user_id')}}
             </div>
             <div class="form-group">
-                {{Form::file('cover_image')}}
+                
             </div>
             {{Form::submit('Submit',['class'=>'btn btn-primary'])}}
         {!! Form::close() !!}

@@ -16,10 +16,6 @@
 <div class="container">
         <div class="row rm-3">
             <br>
-            <div class="col-sm-2">
-                    <img class="img-rounded" src="/storage/user_images/{{$users->user_img}}" alt="Image Not Found" style="width: 100%">
-                
-            </div>
             <div class="col-sm-3">
                 <div class="bg-transparent">
                     <h4>Name:</h4>

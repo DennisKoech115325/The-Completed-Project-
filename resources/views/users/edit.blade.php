@@ -29,11 +29,7 @@
             </div>
              <br>
              <div class="row justify-content-center">
-            <div class="form-group row">
-                <div class="col-md-4">
-                {{Form::file('user_img',['class'=>'col-md-4 col-form-label text-md-right'])}}
-                </div>
-            </div>
+           
             <div class="form-group row">
             {{Form::hidden('_method','PUT')}}
             <br>

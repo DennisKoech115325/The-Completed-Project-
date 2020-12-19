@@ -3,7 +3,7 @@
     <div class="container-fluid">
     <h1>{{$posts->title}}</h1>
 
-                <img style="width:100%" src="/storage/cover_images/{{$posts->cover_image}}">
+                
 
         <div class="jumbotron text-lg-left">
                 {{$posts->body}}

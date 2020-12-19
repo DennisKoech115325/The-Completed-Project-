@@ -13,7 +13,7 @@
             </div>
             <br>
             <div class="form-group">
-                {{Form::file('cover_image')}}
+                
             </div>
             {{Form::hidden('_method','PUT')}}
             <br>
