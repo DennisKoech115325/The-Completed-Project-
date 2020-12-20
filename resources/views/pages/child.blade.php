@@ -1,13 +1,12 @@
 @extends('layouts.app')
 @section('content')
 <div class="jumbotron text-center">
-    <h1>Welcome</h1>
-    <h2>About us</h2>
+    <h1>BorderLine Blog</h1>
+    <h2>Share Your Views</h2>
     <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Placeat rerum ab sint quis doloremque animi est quia qui assumenda iste. 
-        Molestiae nulla non, iusto repellendus modi consequuntur temporibus reprehenderit eos!
+        Let's Get to Writing
     </p>
+    <a href="/register" class="btn btn-primary">Join</a>
     
 </div>
 

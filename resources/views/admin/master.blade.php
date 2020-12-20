@@ -19,5 +19,8 @@
       </div>
     </nav>
 </div>
+<div class="text-center">
+  <h2>Welcome to The Administrator Dashboard</h2>
+</div>
 </div>
 @endsection
