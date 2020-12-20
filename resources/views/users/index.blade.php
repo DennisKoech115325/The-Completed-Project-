@@ -9,7 +9,8 @@
                     
                     <div class="col_sm8 col-sm-8">
                         <h3><a href="/users/{{$item->id}}">{{$item->name}} </a></h3>
-                        <small>Written on {{$item->created_at}}</small>   
+                        <p>{{$item->username}}</p>
+                        <small>Joined on: {{$item->created_at}}</small>   
                     </div>
             </div>
                
